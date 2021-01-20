@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv{
+    width: 600px;
+    border: 1px solid black;
+    margin: 10px auto; 
+    padding: 20px;
+    text-align: center;
+}
+
+.hoverdiv{
+    width: 300px;
+    height: 201px;
+    position: relative;
+    display: inline-block;
+    
+}
+.hoverinner h2{
+    display: inline-block;
+    margin-right: 139px;
+    font-family: 'Permanent Marker', cursive;
+    color: #3B3B98;
+    
+}
+.hoverinner p{
+    display: inline-block;
+    font-family: 'Permanent Marker', cursive;
+    color: #0f863d;
+}
+
+.hoverdiv img{
+    max-width: 300px;
+}
+.hoverinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 338px;
+    width: 0;
+    height: 0;
+    background-color: rgba(126,255,245,.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+
+}
+
+.hoverdiv:hover .hoverinner{
+    visibility: visible;
+    opacity: 1;
+    
+
+}
